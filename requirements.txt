@@ -1,0 +1,7 @@
+Flask>=2.2.3
+mysql
+dashscope
+mysql-connector
+mysql-connector-python
+markdown
+pyodbc
