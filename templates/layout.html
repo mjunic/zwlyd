@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="keywords" content="指望">
+  <meta name="description" content="指望另一队所搭建">
+  <meta name="applicable-device" content="pc,mobile">
+  <link rel="icon" href="/static/picture/favicon.jpg" type="image/jpg">
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/bxslider.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/slick.css">
+  <link rel="stylesheet" href="/static/css/banner.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/chat.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top_bg">
+      <div class="container">
+        <div class="col-xs-12 col-sm-9 col-md-9">
+          <span class="top_welcome">你好呀~</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7">
+          <img src="/static/picture/logo.jpg" class="logo" alt="wrong" style="max-width: 200px;">
+        </div>
+      </div>
+    </div>
+    <!-- Fixed navbar -->
+    <nav id="top_nav" class="navbar navbar-default navbar-src-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">导航菜单</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <span id="search_btn" class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+          <p class="navbar-brand">菜单</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href={{ url_for("index") }}>首 页</a></li>
+            <li class="dropdown ">
+              <a href={{ url_for("aboutus") }}>关于我们</a>
+              <a href="#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+              <ul class='dropdown-menu nav_small' role='menu'>
+                <li><a href={{ url_for("project") }}>项目简介</a></li>
+                <li><a href={{ url_for("contact") }}>科创合作</a></li>
+              </ul>
+            </li>
+            <li><a href={{ url_for("course") }}>选课建议</a></li>
+            <li><a href={{ url_for("food") }}>美食推荐</a></li>
+            <li><a href={{ url_for("francais") }}>法语学习</a></li>
+            <li><a href={{ url_for("aboutus") }}>开发历程</a></li>
+            <li><a href={{ url_for("contact") }}>科创合作</a></li>
+            <li><a href={{ url_for("feedback") }}>留言反馈</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  {% block content %}{% endblock %}
+
+
+  <footer style="background-image: url()">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 col-md-5 footer_contact">
+          <p>创建由"指望另一队"团队共同完成</p>
+          <p>邮箱：mjunic@163.com</p>
+          <p>地址：上海大学宝山校区</p>
+          <p>项目：企创中欧之基于阿里云大模型解决方案的智能对话应用开发</p>
+          <p>项目时间：2024.12.8 - 2025.02.15</p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-5"></div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <p><img class="footer_qrcode" src="/static/picture/weacht.png" alt="二维码图片"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/bootstrap.js"></script>
+  <script src="/static/js/countUp.min.js"></script>
+  <script src="/static/js/banner_slick.js"></script>
+  <script src="/static/js/banner.js"></script>
+
+  <script src="/static/js/jquery.smoove.min.js"></script>
+  <script>
+    $('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.advantage_col,.news_head,.news_index,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({
+      offset: '10%'
+    });
+  </script>
+</body>
+
+</html>

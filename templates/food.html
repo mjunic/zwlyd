@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="page_bg" style="background: url(/static/picture/美食.jpg) center top no-repeat;"></div>
+<div class="bread_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="bread_nav">
+          <span>您的位置：<a href="/">首 页</a> &gt; 美食推荐</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-8 col-md-9" style="float:right">
+
+      <div class="right_head">
+        <h2><span>美食推荐</span></h2>
+      </div>
+      <div class="right_contents">
+        <div class="right_contents_h1">
+          <h1>今日美食推荐</h1>
+          <p>{{ food1 }}</p>
+          <p>{{ food2 }}</p>
+          <p>{{ food3 }}</p>
+          <p>{{ food4 }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <h3 class="left_h3"><span>导航栏目</span></h3>
+      <div class="left_column">
+        <ul class="left_nav_ul" id="firstpane">
+          <li>
+            <a class="biglink" href={{ url_for("project") }}>项目简介</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("contact") }}>科创合作</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("feedback") }}>留言反馈</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>三大模块</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("course") }} title="选课建议">选课建议</a></li>
+          <li><a href={{ url_for("food") }} title="美食推荐">美食推荐</a></li>
+          <li><a href={{ url_for("francais") }} title="法语学习">法语学习</a></li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>开发历程</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("s4") }} title="项目整体搭建">项目整体搭建</a></li>
+          <li><a href={{ url_for("s3") }} title="botpress工作流尝试">botpress工作流尝试</a></li>
+          <li><a href={{ url_for("s2") }} title="基于flask的api调用">基于flask的api调用</a></li>
+          <li><a href={{ url_for("s1") }} title="百炼模型的训练和部署">AI的本地部署</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

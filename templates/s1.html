@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="page_bg" style="background: url(/static/image/1617070665.jpg) center top no-repeat;"></div>
+<div class="bread_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="bread_nav">
+          <span>您的位置：<a href="/">首 页</a> &gt; AI的本地部署</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-9" style="float:right">
+      <div class="right_head">
+        <h2><span>开发历程</span></h2>
+      </div>
+      <div class="right_contents">
+        <div class="right_contents_h1">
+          <h1>AI的本地部署</h1>
+          <span>发布时间：2024-01-04 撰稿人：李杭</span>
+          <p style="text-align:left">
+            <strong>本地部署的初期实践：</strong><br />在项目的初期开发阶段，团队利用Dashscope和百炼API，成功实现了对Qwen_Max模型的本地化部署和简单测试。本地部署的优势在于开发环境的独立性和便捷性，团队成员可以在本地机器上快速搭建开发环境，无需依赖外部网络连接，即可进行模型的调试和测试。通过本地部署，团队能够快速迭代模型的调用逻辑，及时发现和解决问题。例如，在测试过程中，团队可以方便地修改代码、调整参数，并在浏览器中直观地查看模型的输出结果，大大提高了开发效率。<br />
+            <strong>大模型微调：</strong><br />团队在初期调用时发现模型的特点不够鲜明，随之选择自行调教，便运用了大模型微调技术。团队先准备了高质量特定任务数据，接着依计算资源和模型规模设微调超参数，之后载入预训练模型权重，在特定任务数据上训练，监控指标并调整，最终评估微调后模型性能。<br />
+            <img src="/static/picture/AI本地部署.png"><br />
+            <strong>本地环境的局限性与挑战：</strong><br />然而，随着项目的推进，本地环境在硬件性能和资源限制方面逐渐暴露出瓶颈。AI模型的运行通常需要大量的计算资源和内存，尤其是像Qwen_Max这样复杂的模型，在本地机器上运行时，可能会出现响应速度慢、系统稳定性差等问题，难以满足复杂场景下的实时性和高性能要求。此外，本地部署还存在数据安全性和可扩展性方面的挑战，无法满足大规模用户访问和分布式训练的需求。<br />
+            <strong>云部署的规划与优势：</strong><br />为了解决本地部署的局限性，团队未来计划将模型迁移至云服务器。云部署具有诸多优势，首先，云服务提供商拥有强大的计算能力和丰富的资源，可以提供高性能的计算实例和存储服务，满足AI模型的运行需求，显著提升系统的性能和响应速度。其次，云部署支持分布式训练和多终端访问，团队可以利用云端的分布式架构，对模型进行大规模的训练和优化，同时方便不同终端的用户随时随地访问系统，提高系统的可用性和用户体验。此外，云服务还提供了完善的数据备份、安全防护和监控管理功能，能够保障系统的稳定性和数据的安全性。本地部署的开发过程为团队积累了宝贵的经验，尤其是在模型优化、API调用和前后端交互设计方面，这些经验将为后续的云部署和技术扩展提供重要的参考和支持，助力项目顺利迈向更高的阶段。
+          </p>
+        </div>
+      </div>
+      <div class="point">
+        <span class="to_next col-xs-12 col-sm-6 col-md-6">上一个：<a href={{ url_for("s2") }}>基于flask的api调用</a></span>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <h3 class="left_h3"><span>导航栏目</span></h3>
+      <div class="left_column">
+        <ul class="left_nav_ul" id="firstpane">
+          <li>
+            <a class="biglink" href={{ url_for("project") }}>项目简介</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("contact") }}>科创合作</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("feedback") }}>留言反馈</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>三大模块</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("course") }} title="选课建议">选课建议</a></li>
+          <li><a href={{ url_for("food") }} title="美食推荐">美食推荐</a></li>
+          <li><a href={{ url_for("francais") }} title="法语学习">法语学习</a></li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>开发历程</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("s4") }} title="项目整体搭建">项目整体搭建</a></li>
+          <li><a href={{ url_for("s3") }} title="botpress工作流尝试">botpress工作流尝试</a></li>
+          <li><a href={{ url_for("s2") }} title="基于flask的api调用">基于flask的api调用</a></li>
+          <li><a href={{ url_for("s1") }} title="百炼模型的训练和部署">AI的本地部署</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="page_bg" style="background: url(/static/image/1617070665.jpg) center top no-repeat;"></div>
+<div class="bread_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="bread_nav">
+          <span>您的位置：<a href="/">首 页</a> &gt; 开发历程</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-9" style="float:right">
+      <div class="right_head">
+        <h2><span>开发历程</span></h2>
+      </div>
+      <div class="right_contents">
+        <div class="right_contents_h1">
+          <h1>开发历程</h1>
+          <span>发布时间：2025-01-04 撰稿人：俞浅沐</span>
+          <p style="text-align:left">本项目围绕人工智能在应用开发中的全栈整合展开，涵盖了从后端框架到前端设计的多方面内容。核心技术采用 Flask 框架搭建基础后端，结合 AI 模型和 Botpress 工作流实现智能化交互，同时集成知识库与 API 调用，探索了多种数据库及服务的应用场景。项目的主要目标是通过技术手段，打造一个高效、智能的网页助手，从而实现个性化推荐和多功能交互体验。在开发过程中，团队针对性能瓶颈、部署难点以及用户界面优化等问题进行了多轮迭代与调整。未来计划集中精力解决现存的数据库整合与云部署问题，并通过增强页面布局与功能设计，使项目能够满足更高的用户需求与应用场景。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <h3 class="left_h3"><span>导航栏目</span></h3>
+      <div class="left_column">
+        <ul class="left_nav_ul" id="firstpane">
+          <li>
+            <a class="biglink" href={{ url_for("project") }}>项目简介</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("contact") }}>科创合作</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+          <li>
+            <a class="biglink" href={{ url_for("feedback") }}>留言反馈</a>
+            <ul class="left_snav_ul menu_body"></ul>
+          </li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>三大模块</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("course") }} title="选课建议">选课建议</a></li>
+          <li><a href={{ url_for("food") }} title="美食推荐">美食推荐</a></li>
+          <li><a href={{ url_for("francais") }} title="法语学习">法语学习</a></li>
+        </ul>
+      </div>
+      <div class="left_news">
+        <h3 class="left_h3"><span>开发历程</span></h3>
+        <ul class="left_news">
+          <li><a href={{ url_for("s4") }} title="项目整体搭建">项目整体搭建</a></li>
+          <li><a href={{ url_for("s3") }} title="botpress工作流尝试">botpress工作流尝试</a></li>
+          <li><a href={{ url_for("s2") }} title="基于flask的api调用">基于flask的api调用</a></li>
+          <li><a href={{ url_for("s1") }} title="百炼模型的训练和部署">AI的本地部署</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

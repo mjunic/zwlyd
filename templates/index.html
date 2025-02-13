@@ -1,0 +1,300 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div id="index_main" class="index_main">
+  <div class="section section1">
+    <div class="index_banner">
+      <div class="item">
+        <div class="items" style="background-image: url(/static/picture/banner.jpg);"></div>
+        <div class="inner">
+          <div class="block_txt">
+            <h2 style="color: #000;">基于阿里云大模型解决方案的智能对话应用开发</h2>
+            <h4 style="color: #000;">Alibaba Cloud large-model-driven intelligent conversation dev.</h4>
+            <p><a href={{ url_for("aboutus") }} class="btn btn-primary btn-lg">了解更多</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="left slick_txt">
+      <div class="prev slick_arrow"></div>
+    </div>
+    <div class="right slick_txt">
+      <div class="next slick_arrow"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="mb-30">
+  <div class="container">
+    <div class="row">
+      <div class="product_head" data-move-y="-40px">
+        <h2>技术支持</h2>
+        <p>technical support</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="product_list">
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://www.botpress.com"><img src="/static/picture/botpress.jpg" alt="1"></a>
+            <a href="https://www.botpress.com" target="_blank">botpress</a>
+            <p>可用于创建UI,BOT</p>
+          </div>
+
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://tongyi.aliyun.com/"><img src="/static/picture/通义千问.jpg" alt="2"></a>
+            <a href="https://tongyi.aliyun.com/" target="_blank">通义千问</a>
+            <p>全能AI助手</p>
+          </div>
+
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://openai.com/chatgpt/overview/"><img src="/static/picture/chatgpt.jpg" alt="3"></a>
+            <a href="https://openai.com/chatgpt/overview/" target="_blank">chatGPT</a>
+            <p>openAI大语言模型</p>
+          </div>
+
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://www.aliyun.com/"><img src="/static/picture/阿里云.jpg" alt="4"></a>
+            <a href="https://www.aliyun.com/" target="_blank">阿里云</a>
+            <p>全球领先的云计算及AI</p>
+          </div>
+
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://www.cursor.com/"><img src="/static/picture/cursor.jpg" alt="5"></a>
+            <a href="https://www.cursor.com/" target="_blank">cursor</a>
+            <p>智能代码编辑器</p>
+          </div>
+
+          <div class="col-sm-3 col-md-2 col-mm-6 advantage_col" data-move-y="120px">
+            <a href="https://help.aliyun.com/zh/model-studio/getting-started/what-is-model-studio"><img src="/static/picture/百炼.png" alt="6"></a>
+            <a href="https://help.aliyun.com/zh/model-studio/getting-started/what-is-model-studio" target="_blank">model studio</a>
+            <p>一站式生成式AI平台</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="about_head" data-move-y="-40px">
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-5 js_about_right" data-move-y="40px">
+        <img src="/static/picture/about-01.jpg" border="0" width="100%">
+      </div>
+      <div class="col-xs-12 col-sm-7 col-md-7 js_about_left" data-move-y="40px">
+        <h3 class="about_h3">指望另一队</h3>
+        <p class="about_p">Count on Other Team</p>
+        <div class="about_content">
+          指望另一队由上海大学中欧工程技术学院和钱伟长学院的同学拼接而成。这个队名象征着他们对别的队伍实力的信任和找到大腿的渴望......<br>
+          <br>
+          虽然如此，这是一支非常有故事的团队：在团队协作方面，他们曾配合参与过“中车杯”等科创项目，具备一定的合作经验与默契程度。同时，他们各有所长，可以碰撞出不一样的火花;江浩宇会单片机的嵌入式和前端开发技术；李杭理科学习极强，编程水平极高；杨鸣昊涉猎计算机深度学习支持向量机；俞浅沐她会焊接，所以拓展模块可以直接做；盛康涵可以熟练使用PS、视频剪辑等技术。同时，他们全员都具备编程基础，绝对能带来不一样的惊喜。
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href={{ url_for("project") }} class="about_btn">项目介绍</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href={{ url_for("contact") }} class="about_btn">联系我们</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href={{ url_for("aboutus") }} class="about_btn">开发历程</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href={{ url_for("contact") }} class="about_btn">科创合作</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href={{ url_for("feedback") }} class="about_btn">留言反馈</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-mm-6">
+            <a href="https://github.com/mjunic/zwlyd/" class="about_btn">源码展示</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="shuzi" style="background-image: url()">
+  <div class="container">
+    <div class="row">
+      <div class="number">
+        <div class="roll auto clear">
+
+          <div class="col-sm-4 col-md-3 col-mm-6 scolling">
+            <div>
+              <h3 class="counter">33546</h3>
+            </div>
+            <div class="title_text">代码行数超过三万条</div>
+          </div>
+          <div class="col-sm-4 col-md-3 col-mm-6 scolling">
+            <div>
+              <h3 class="counter">400</h3>
+            </div>
+            <div class="title_text">数据库吞吐量可达400次每秒</div>
+          </div>
+          <div class="col-sm-4 col-md-3 col-mm-6 scolling">
+            <div>
+              <h3 class="counter">13</h3>
+            </div>
+            <div class="title_text">训练大数据模型多达13个</div>
+          </div>
+          <div class="col-sm-4 col-md-3 col-mm-6 scolling">
+            <div>
+              <h3><span class="counter">180</span>小时</h3>
+            </div>
+            <div class="title_text">团队人均爆肝时长</div>
+          </div>
+        </div>
+      </div>
+      <script src="/static/js/countUp.min.js"></script>
+      <script>
+        // 数字滚动
+        $(function () {
+          $('.counter').countUp();
+        });
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="news_head" data-move-y="-40px">
+        <h2>开发历程</h2>
+        <p>NEWS INFORMATION</p>
+      </div>
+      <div class="col-sm-6 col-md-6 news_col">
+        <ul class="news_index" data-move-y="200px">
+          <li>
+            <a href={{ url_for("s1") }} 
+               title="AI的本地部署">AI的本地部署</a><span class='news_time2'><strong>10</strong><i>2024-12</i></span><br>
+            <em class='news_time2'>初步探索qwen,botpress,chatgpt的AI本地部署</em>
+          </li>
+          <li>
+            <a href={{ url_for("s2") }} 
+               title="基于flask的api调用">基于flask的api调用</a><span class='news_time2'><strong>18</strong><i>2024-12</i></span><br>
+            <em class='news_time2'>通过flask调用基本的AI模型实现初步网页化</em>
+          </li>
+          <li>
+            <a href={{ url_for("s3") }} 
+               title="botpress工作流尝试">botpress工作流尝试</a><span class='news_time2'><strong>28</strong><i>2024-12</i></span><br>
+            <em class='news_time2'>尝试botpress工作流进行弹窗AI对话</em>
+          </li>
+          <li>
+            <a href={{ url_for("s4") }} 
+               title="项目整体搭建">项目整体搭建</a><span class='news_time2'><strong>08</strong><i>2025-01</i></span><br>
+            <em class='news_time2'>完成云服务器HTML页面搭建和API的调用</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="case_bg" style="background: url(/static/picture/product.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="case_head" data-move-y="-40px">
+          <h2>重点项目</h2>
+          <p><span>————————————</span>   企创中欧，打造一流科创项目   <span>————————————</span></p>
+        </div>
+        <div class="case_list">
+
+          <div class="col-sm-4 col-md-4 col-mm-12 case_img" data-move-y="50px">
+            <div class="thumbnail">
+              <a href={{ url_for("course") }}>
+                <img src="/static/picture/选课.jpg" class="opacity_img2" alt="1">
+              </a>
+              <h4 class="case_title"><a href={{ url_for("course") }}>选课建议</a></h4>
+              <p class="case_des">通过选课小本本和其他信息给出新学期选课建议</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-12 case_img" data-move-y="50px">
+            <div class="thumbnail">
+              <a href={{ url_for("food") }}>
+                <img src="/static/picture/美食.jpg" class="opacity_img2" alt="2">
+              </a>
+              <h4 class="case_title"><a href={{ url_for("food") }}>美食推荐</a></h4>
+              <p class="case_des">包括每日推荐，智能偏好分析以及评价精准排雷</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-12 case_img" data-move-y="50px">
+            <div class="thumbnail">
+              <a href={{ url_for("francais") }}>
+                <img src="/static/picture/法语.jpg" class="opacity_img2" alt="3">
+              </a>
+              <h4 class="case_title"><a href={{ url_for("francais") }}>法语学习</a></h4>
+              <p class="case_des">智能化AI对话，智能翻译，智能语法分析</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="product_head" data-move-y="-40px">
+      <h2>创新技术</h2>
+      <p>INNOVATIVE TECHNOLOGY</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="product_list">
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+            <img src="/static/picture/1.jpg" class="img-thumbnail" alt="1">
+          <p class="product_title">隐私安全加密</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+            <img src="/static/picture/2.jpg" class="img-thumbnail" alt="2">
+          <p class="product_title">qwen智能模型</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+            <img src="/static/picture/3.jpg" class="img-thumbnail" alt="3">
+          <p class="product_title">botpress部署</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+            <img src="/static/picture/4.jpg" class="img-thumbnail" alt="4">
+          <p class="product_title">云服务器</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+            <img src="/static/picture/5.jpg" class="img-thumbnail" alt="5">
+          <p class="product_title">模糊PID算法</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+          <img src="/static/picture/6.jpg" class="img-thumbnail" alt="6">
+          <p class="product_title">HLO技术</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom mfoot_box">
+  <div class="mfoot_nav">
+    <a href=""><span class="glyphicon glyphicon-home btn-lg" aria-hidden="true"></span>首页</a>
+  </div>
+  <div class="mfoot_nav">
+    <a href="tel:15000971797"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机</a>
+  </div>
+  <div class="mfoot_nav" aria-hidden="true" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="glyphicon glyphicon-th-list btn-lg"></span>分类
+  </div>
+  <div class="mfoot_nav">
+    <a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部</a>
+  </div>
+</nav>
+{% endblock %}
